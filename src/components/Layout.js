@@ -3,7 +3,7 @@ import { Navbar } from "./Navbar"
 // import { Sidebar } from "./Sidebar"
 // import { Footer } from "./Footer"
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
@@ -11,5 +11,3 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
-export default Layout

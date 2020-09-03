@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaHome } from "react-icons/fa"
 
@@ -16,7 +16,7 @@ export const Project = ({
     <article className="project">
       <Image className="project-img" fluid={image.childImageSharp.fluid} />
       <div className="project-info">
-        <span className="project-number">0{index + 1}</span>
+        <span className="project-number">0{index + 1}.</span>
         <h3>{title}</h3>
         <p className="project-desc">{description}</p>
         <div className="project-stack">
