@@ -5,10 +5,12 @@ import { Hero } from "../components/Hero"
 import { Services } from "../components/Services"
 import { Jobs } from "../components/Jobs"
 import { Projects } from "../components/Projects"
+import { Blogs } from "../components/Blogs"
 
 const IndexPage = ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
   } = data
   return (
     <>
@@ -17,6 +19,7 @@ const IndexPage = ({ data }) => {
         <Services />
         <Jobs />
         <Projects projects={projects} title="Featured Projects" showLink />
+        <Blogs blogs={blogs} title="Blog" showLink />
       </Layout>
     </>
   )
@@ -41,6 +44,24 @@ export const query = graphql`
         stack {
           id
           tag
+        }
+      }
+    }
+    allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
+      nodes {
+        slug
+        content
+        description
+        date(formatString: "MMMM Do YYYY")
+        id
+        title
+        category
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }
