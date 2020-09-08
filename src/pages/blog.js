@@ -3,11 +3,17 @@ import { Layout } from "../components/Layout"
 import { graphql } from "gatsby"
 import { Blogs } from "../components/Blogs"
 
-const Blog = () => {
+const Blog = ({
+  data: {
+    allStrapiBlogs: { nodes: blogs },
+  },
+}) => {
   return (
-    <>
-      <h2>Blog Page</h2>
-    </>
+    <Layout>
+      <section className="blog-page">
+        <Blogs blogs={blogs} title="Blog" />
+      </section>
+    </Layout>
   )
 }
 
