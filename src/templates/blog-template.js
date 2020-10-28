@@ -4,7 +4,7 @@ import { Layout } from "../components/Layout"
 import ReactMarkdown from "react-markdown"
 
 const ComponentName = ({ data }) => {
-  const { content, title, description } = data.blog
+  const { content } = data.blog
 
   return (
     <Layout>
@@ -27,7 +27,6 @@ export const query = graphql`
     blog: strapiBlogs(slug: { eq: $slug }) {
       content
       title
-      description
     }
   }
 `
