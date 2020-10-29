@@ -29,8 +29,8 @@ export const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>I'm Kate</h1>
-            <h4>A software developer based in the North West</h4>
+            <h1>Kate Bryan</h1>
+            <h4>Software developer</h4>
             <Link to="/contact" className="btn">
               Contact me
             </Link>
