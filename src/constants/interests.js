@@ -18,6 +18,6 @@ export default [
     id: 3,
     icon: <GrGamepad className="service-icon" />,
     title: "Video Games",
-    text: `Big fan of videogames and boardgames. I'm terrible at FPS's and MOBA's but continue to grind at them nonetheless... Valorant is my current favourite multiplayer game.`,
+    text: `I spend a lot of time playing videogames and boardgames. Some of my favourites include Valorant, Rime and Arboretum.`,
   },
 ]
