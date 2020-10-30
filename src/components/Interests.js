@@ -2,7 +2,7 @@ import React from "react"
 import services from "../constants/services"
 import { Title } from "./Title"
 
-export const Services = () => {
+export const Interests = () => {
   return (
     <section className="section bg-grey">
       <Title title="Interests" />

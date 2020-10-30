@@ -447,8 +447,8 @@ Hero
 
 .hero-img {
   display: none;
-  border: 10px solid var(--clr-primary-4);
-  border-radius: 8px;
+  border: 10px solid var(--clr-primary-3);
+  border-radius: 4px;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);
@@ -468,7 +468,7 @@ Hero
     left: 65%;
     right: 0;
     bottom: 0;
-    background: var(--clr-primary-3);
+    background: var(--clr-primary-1);
   }
   .hero-center {
     grid-template-columns: repeat(12, 1fr);

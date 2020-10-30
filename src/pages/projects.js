@@ -10,7 +10,6 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
-    {/* {console.log(data, '<-- data in Projects Page')} */}
       <section className="projects-page">
         <Projects projects={projects} title="all projects" />
       </section>

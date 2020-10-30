@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components/Layout"
 import { Hero } from "../components/Hero"
-import { Services } from "../components/Services"
+import { Interests } from "../components/Interests"
 import { Jobs } from "../components/Jobs"
 import { Projects } from "../components/Projects"
 
@@ -14,9 +14,9 @@ const IndexPage = ({ data }) => {
     <>
       <Layout>
         <Hero />
-        <Services />
         <Jobs />
         <Projects projects={projects} title="Featured Projects" showLink />
+        <Interests />
       </Layout>
     </>
   )
