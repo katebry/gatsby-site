@@ -29,7 +29,7 @@ export const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>Kate Bryan</h1>
+            <h1 className="h1-name">Kate Bryan</h1>
             <h4>Software developer</h4>
             <Link to="/contact" className="btn">
               Contact me
