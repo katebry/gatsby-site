@@ -1,5 +1,5 @@
 import React from "react"
-import services from "../constants/services"
+import interests from "../constants/interests"
 import { Title } from "./Title"
 
 export const Interests = () => {
@@ -7,8 +7,8 @@ export const Interests = () => {
     <section className="section bg-grey">
       <Title title="Interests" />
       <div className="section-center services-center">
-        {services.map(service => {
-          const { id, icon, title, text } = service
+        {interests.map(interest => {
+          const { id, icon, title, text } = interest
 
           return (
             <article key={id} className="service">
