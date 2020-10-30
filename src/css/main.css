@@ -4,7 +4,7 @@ Fonts
 ===============
 */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,700;1,700&display=swap");
 
 /*
 =============== 
@@ -20,7 +20,7 @@ Variables
   --clr-primary-4: #00bbf9;
   --clr-primary-5: #00f5d4;
   --clr-primary-8: #f15bb5;
-  --clr-primary-9: hsl(185, 94%, 87%);
+  --clr-primary-9: white;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-3: hsl(209, 34%, 30%);
@@ -531,13 +531,14 @@ Interests
 }
 .service:hover {
   background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  color: white;
+  font-weight: 500;
 }
 .service:hover p {
-  color: var(--clr-primary-9);
+  color: white;
 }
 .service:hover .underline {
-  background: var(--clr-primary-9);
+  background: white;
 }
 @media screen and (min-width: 676px) {
   .services-center {
@@ -878,11 +879,13 @@ About Page
     grid-column: 6 / -1;
   }
 }
+
 /*
 ===============
 Contact Page
 ===============
 */
+
 .contact-page {
   display: grid;
   place-items: center;
@@ -935,16 +938,14 @@ Contact Page
 }
 
 .footer-container {
-  display: flex;
   height: 75px;
   width: 100%;
-  padding-left: 25%;
-  padding-right: 25%;
   background-color: var(--clr-main);
 }
 
 .footer-text-wrapper {
   display: flex;
+  align-content: center;
   justify-content: center;
   align-items: center;
   transition: var(--transition);
@@ -952,4 +953,11 @@ Contact Page
 
 .footer-text-wrapper:hover {
   color: var(--clr-primary-5);
+}
+
+.footer-text {
+  justify-content: center;
+  align-content: center;
+  margin-top: 25px;
+  font-weight: 700;
 }
