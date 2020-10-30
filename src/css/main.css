@@ -933,3 +933,23 @@ Contact Page
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+
+.footer-container {
+  display: flex;
+  height: 75px;
+  width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  background-color: var(--clr-main);
+}
+
+.footer-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.footer-text-wrapper:hover {
+  color: var(--clr-primary-5);
+}

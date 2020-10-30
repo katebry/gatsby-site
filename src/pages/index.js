@@ -5,6 +5,7 @@ import { Hero } from "../components/Hero"
 import { Interests } from "../components/Interests"
 import { Jobs } from "../components/Jobs"
 import { Projects } from "../components/Projects"
+import { Footer } from "../components/Footer"
 
 const IndexPage = ({ data }) => {
   const {
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => {
         <Jobs />
         <Projects projects={projects} title="Featured Projects" showLink />
         <Interests />
+        <Footer />
       </Layout>
     </>
   )
