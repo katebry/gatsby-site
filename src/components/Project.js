@@ -1,7 +1,6 @@
 import React from "react"
-// import PropTypes from "prop-types"
 import Image from "gatsby-image"
-import { FaGithubSquare, FaHome } from "react-icons/fa"
+import { FaGithubSquare } from "react-icons/fa"
 
 export const Project = ({
   description,
@@ -27,9 +26,6 @@ export const Project = ({
         <div className="project-links">
           <a href={github}>
             <FaGithubSquare className="project-icon" />
-          </a>
-          <a href={url}>
-            <FaHome className="project-icon" />
           </a>
         </div>
       </div>
