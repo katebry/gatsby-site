@@ -2,6 +2,7 @@ import React from "react"
 import { Layout } from "../components/Layout"
 import { graphql } from "gatsby"
 import { Projects } from "../components/Projects"
+import { Footer } from "../components/Footer"
 
 const ProjectsPage = ({
   data: {
@@ -13,6 +14,7 @@ const ProjectsPage = ({
       <section className="projects-page">
         <Projects projects={projects} title="all projects" />
       </section>
+      <Footer />
     </Layout>
   )
 }
