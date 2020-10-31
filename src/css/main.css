@@ -458,12 +458,12 @@ Jobs
   line-height: 1;
 }
 .job-btn:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-8);
   box-shadow: 0 2px var(--clr-primary-5);
 }
 .active-btn {
-  color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
+  color: var(--clr-primary-3);
+  box-shadow: 0 2px var(--clr-primary-2);
 }
 .job-info {
   min-height: 420px;
@@ -500,7 +500,7 @@ Jobs
   .jobs-center {
     width: 90vw;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 250px 1fr;
     column-gap: 4rem;
   }
   .btn-container {
