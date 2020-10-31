@@ -31,8 +31,8 @@ export const Hero = () => {
             <div className="underline"></div>
             <h1 className="h1-name">Kate Bryan</h1>
             <h4>Software developer</h4>
-            <Link to="/contact" className="btn">
-              Contact me
+            <Link to="/about" className="btn">
+              About me
             </Link>
             <div className="social-links-container">
               <SocialLinks />

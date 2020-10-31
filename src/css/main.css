@@ -20,7 +20,6 @@ Variables
   --clr-primary-4: #00bbf9;
   --clr-primary-5: #00f5d4;
   --clr-primary-8: #f15bb5;
-  --clr-primary-9: white;
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-3: hsl(209, 34%, 30%);
@@ -30,11 +29,8 @@ Variables
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
-  --clr-green-dark: hsl(125, 67%, 35%);
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: "Vollkorn", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
@@ -58,7 +54,7 @@ Variables
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -131,7 +127,7 @@ Global Classes
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -407,14 +403,14 @@ Interests
 }
 .service:hover {
   background: var(--clr-primary-5);
-  color: white;
+  color: var(--clr-white);
   font-weight: 500;
 }
 .service:hover p {
-  color: white;
+  color: var(--clr-white);
 }
 .service:hover .underline {
-  background: white;
+  background: var(--clr-white);
 }
 @media screen and (min-width: 676px) {
   .services-center {
@@ -449,6 +445,7 @@ Jobs
   margin-bottom: 4rem;
 }
 .job-btn {
+  font: var(--ff-primary);
   background: transparent;
   border-color: transparent;
   text-transform: capitalize;
